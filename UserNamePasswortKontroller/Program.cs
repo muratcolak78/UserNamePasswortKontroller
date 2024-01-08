@@ -15,7 +15,7 @@ while (fortfahren)
 
     if (messageCounter == 1)
     {
-        entryMessage = "your password must be at least 6 characters\nand contain at least one letter and one number.";
+        entryMessage = "your password must be at least 4 characters\nand contain at least one letter and one number.";
     }
     else if (messageCounter == 2)
     {
@@ -52,7 +52,7 @@ while (fortfahren)
                 }
             Console.WriteLine(passwordChar);
 
-            if (digitCount > 0 && letterCount > 0 && password.Length >= 6)
+            if (digitCount > 0 && letterCount > 0 && password.Length >= 4)
             {
                 digitCount = 0; letterCount=0;
                 acceptedusername = username;
